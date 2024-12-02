@@ -46,7 +46,7 @@ export class AuthService {
             username: req.user.firstName + ' ' + req.user.lastName,
         };
     
-        return this.jwtService.signAsync(payload, { expiresIn: '5s' }).then((access_token) => {
+        return this.jwtService.signAsync(payload, { expiresIn: '60s' }).then((access_token) => {
             return {
                 access_token,
                 username: payload.username,
