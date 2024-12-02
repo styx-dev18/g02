@@ -23,9 +23,9 @@ import { AuthModule } from './auth/auth.module';
         entities: [User],
         synchronize: true,
         logging: true,
-        // ssl: {
-        //   rejectUnauthorized: false,
-        // },
+        ssl: {
+          rejectUnauthorized: false,
+        },
       }),
     }),
     UserModule,
